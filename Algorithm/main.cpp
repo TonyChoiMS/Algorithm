@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Algorithm.h"
+#include "DijkstraAlgorithm.h"
 
 int main() {
 	//int nt;
@@ -30,5 +31,26 @@ int main() {
 	int coins[] = {10, 50, 100, 500};
 	algorithm->CoinChange(coins, 4, 2000);
 	delete algorithm;
+	
+	DijkstraAlgorithm dijkstra(7);    // initialize, max node is 7
+    // setting path
+    dijkstra.set(0, 1, 2);    //0 -> 1 : cost 2
+    dijkstra.set(0, 3, 5);
+    
+    dijkstra.set(1, 2, 6);
+    dijkstra.set(1, 4, 10);
+    
+    dijkstra.set(2, 6, 3);
+
+    dijkstra.set(3, 4, 4);
+    dijkstra.set(3, 5, 5);
+
+    dijkstra.set(4, 5, 1);
+    dijkstra.set(4, 6, 7);
+ 
+    dijkstra.set(5, 6, 2);
+
+    //최단경로 검색(0->6)
+    dijkstra.findPath(0, 6);
 	return 0;
 }
