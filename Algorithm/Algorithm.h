@@ -20,4 +20,7 @@ public:
 	
 	int loopLeastCommonMultiple(int num1, int num2);
 	int loopEuclideanLCM(int num1, int num2);
+	
+	// Greedy Algorithm (Coin Change)
+	void CoinChange(int coins[], int numberOfType, int money);
 };

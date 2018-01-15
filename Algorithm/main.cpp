@@ -26,6 +26,9 @@ int main() {
 	int lcm2 = algorithm->loopEuclideanLCM(24, 7);
 	printf("loop lcm : %d\n", lcm1);
 	printf("loop lcm : %d\n", lcm2);
+	
+	int coins[] = {10, 50, 100, 500};
+	algorithm->CoinChange(coins, 4, 2000);
 	delete algorithm;
 	return 0;
 }

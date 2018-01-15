@@ -131,3 +131,46 @@ int Algorithm::loopEuclideanLCM(int num1, int num2) {
 	return multiple / divisor;
 }
 //////////////////////////// End GCD & LCM //////////////////////////////////
+
+// Greedy Algorithm (Coin Change) - probably edit this logic
+void Algorithm::CoinChange(int coins[], int numberOfType, int money) {
+	int *count = new int[numberOfType];	// count of exchange coins 
+	int type = 0;						// Kinds of coins
+	
+	printf("exchange coins : %d won\n", money);
+	
+	// intialize 0 about coins
+	for (int i = 0; i < numberOfType; i++)
+		count[i] = 0;
+		
+	// loop while check last coin
+	while(type < numberOfType) {
+		// if coin larger than money, change coin type
+		if (coins[type] > money) {
+			type++;
+		}
+		// if coin less than money, up to coin count, and discount money to coin value
+		else if (coins[type] < money) {
+			money -= coins[type];
+			count[type]++;
+		}
+		// if last coin value == money, up to coin count and end loop.
+		else {
+			money = 0;
+			count[type]++;
+			break;
+		}
+	}
+	// print kinds of coins count
+	for (int i=0; i <numberOfType; i++) {
+		if (count[i] != 0)
+			printf("%d coin %d\n", coins[i], count[i]);
+	}
+	
+	// leftovers money
+	if (money != 0)
+		printf("left overs money is %d\n", money);
+		
+	delete count;
+	count = NULL;
+}
