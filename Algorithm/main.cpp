@@ -1,6 +1,63 @@
 #include <iostream>
 #include "Algorithm.h"
 #include "DijkstraAlgorithm.h"
+#include "Palindrome.h"
+
+using namespace std;
+
+// Node 연습
+class Node
+{
+public:
+	Node* head;
+	int data;
+	Node* nextNode = nullptr;
+
+	int count = 0;
+
+	void Insert(int data)
+	{
+		if (count == 0)
+		{
+			head->data = data;
+			head->nextNode = nullptr;
+		}
+		else
+		{
+			Node *currentNode = new Node();
+
+			currentNode->data = data;
+			currentNode->nextNode = nullptr;
+
+			Node *tempNode = head;
+
+			while (tempNode->nextNode != nullptr)
+			{
+				tempNode = tempNode->nextNode;
+			}
+
+			tempNode->nextNode = currentNode;
+		}
+
+		count++;
+	}
+};
+
+// 가상함수 상속 관계 확인
+class A {
+public:
+	virtual void f1() { cout << "A :: f1" << endl; }
+	virtual void f2() { cout << "A :: f2" << endl; }
+	void f3() { cout << "A :: f3" << endl; }
+};
+
+class B : public A {
+public:
+	virtual void f2() { cout << "B :: f2" << endl; }
+	void f3() { cout << "B :: f3" << endl; }
+	virtual void f4() { cout << "B :: f4" << endl; }
+};
+
 
 int main() {
 	//int nt;
@@ -52,5 +109,46 @@ int main() {
 
     //최단경로 검색(0->6)
     dijkstra.findPath(0, 6);
+
+
+	// 가상함수 상속관계 확인
+	A *pA = new A;
+	pA->f1();
+	pA->f2();
+	pA->f3();
+	delete pA;
+
+	pA = new B;
+	pA->f1();
+	pA->f2();
+	pA->f3();
+	delete pA;
+
+
+	// 팰린드롬 알고리즘
+	int n = 12321;
+
+	bool bPalindrom = false;
+
+	Palindrome palindrome;
+
+	bPalindrom = palindrome.PalindromAlgorithmToInt(12321);
+
+	if (bPalindrom)
+		cout << n << ": 회문 숫자입니다." << endl;
+	else
+		cout << n << ": 회문 숫자가 아닙니다." << endl;
+
+	cout << bPalindrom << endl;
+	string str = "asdfdsa";
+	bPalindrom = palindrome.PalindromAlgorithmToString(str);
+
+	/*if (bPalindrom)
+		cout << "회문입니다. " << str << endl;
+	else
+		cout << "회문이 아닙니다. " <<  str << endl;*/
+
+	cout << bPalindrom << endl;
+
 	return 0;
 }

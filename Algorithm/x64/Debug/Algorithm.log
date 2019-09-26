@@ -1,0 +1,5 @@
+﻿  main.cpp
+  Palindrome.cpp
+c:\users\minlion\desktop\스터디자료\dx12\dxengine\algorithm\algorithm\palindrome.cpp(32): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  Algorithm.vcxproj -> C:\Users\MinLion\Desktop\스터디자료\DX12\DXEngine\Algorithm\x64\Debug\Algorithm.exe

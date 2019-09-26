@@ -1,5 +1,8 @@
-#include "stdafx.h"
+
 #include "DijkstraAlgorithm.h"
+#include <iostream>
+
+using namespace std;
 
 DijkstraAlgorithm::DijkstraAlgorithm(int numberOfNodes): _numberOfNodes(numberOfNodes) {
 	// initialize cost table
@@ -21,10 +24,10 @@ DijkstraAlgorithm::~DijkstraAlgorithm() {
 	// delete cost table memory
 	for (int i =0;  i < _numberOfNodes; i++) {
 		delete[] _table[i];
-		_table[i] = NULL;
+		_table[i] = nullptr;
 	}
 	delete[] _table;
-	_table = NULL;
+	_table = nullptr;
 }
 	
 void DijkstraAlgorithm::set(int from, int to, int cost) {
@@ -45,7 +48,7 @@ void DijkstraAlgorithm::findPath(int from, int to) {
 	
 	// array delete memory
 	delete[] path;
-	path = NULL;
+	path = nullptr;
 }
 
 void DijkstraAlgorithm::calPath(int *&path, int from) {
@@ -102,33 +105,35 @@ void DijkstraAlgorithm::calPath(int *&path, int from) {
 	delete[] cost;
 	delete[] visit;
 	
-	cost = NULL;
-	visit = NULL;
+	cost = nullptr;
+	visit = nullptr;
 }
 
-void DijkstraAlgorithm::printTable(int *cost, bool *visit, int length) {
+void DijkstraAlgorithm::printTable(int *cost, bool *visit, int length) 
+{
 	//print number
-	printf("Num\t:\t");
+	cout << "Num\t:\t" << endl;
 	for (int i = 0; i < length; i++)
-		printf("%d\t", i);
+		cout << i << endl;
 		
 	// print cost
 	for (int i = 0;  i <length; i++) {
 		if (cost[i] != INF)
-			printf("%d\t", cost[i]);
+			cout << cost[i] << endl;
 		else 
-			printf("X\t");
+			cout << "X\t" << endl;
 	}
 	
 	// check visit
-	printf("\nVisit\t: \t");
+	cout << "\nVisit\t: \t" << endl;
 	for (int i=0; i < length; i++) 
-		printf("%d\t", visit[i]);
+		cout << visit[i] << endl;
 		
-	printf("\n\n");
+	cout << "\n\n" << endl;
 }
 
-void DijkstraAlgorithm::printShortestWay(int from, int to, int *prev) {
+void DijkstraAlgorithm::printShortestWay(int from, int to, int *prev) 
+{
 	// save print path
 	int *path = new int[_numberOfNodes];
 	// last index of saved path
@@ -148,20 +153,24 @@ void DijkstraAlgorithm::printShortestWay(int from, int to, int *prev) {
 	}
 	
 	// if path not exist
-	if (from == -1) 
-		printf("path not exist\n");
-	else {
+	if (from == -1)
+	{
+		cout << "path not exist" << endl;
+	}
+	else 
+	{
 		path[lastIndex++] = to;
 		
 		//print path
-		printf("Optimal path : %d->", start);
+		cout << "Optimal path : " <<  start << endl;
 		
-		for (int i = lastIndex-1; i>0; i--) {
-			printf("%d-> ", path[i]);
+		for (int i = lastIndex-1; i>0; i--) 
+		{
+			cout << path[i] << endl;
 		}
 		
-		printf("%d\n", final);
+		cout << final << endl;
 	}
 	delete[] path;
-	path = NULL;
+	path = nullptr;
 }
