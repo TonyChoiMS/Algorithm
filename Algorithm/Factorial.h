@@ -7,14 +7,14 @@ public:
 	~Factorial();
 
 	// Àç±Í ÆÑÅä¸®¾ó °è»ê
-	int[] AllFactorials(int n)
+	int* AllFactorials(int n)
 	{
-		int[] results = new int[n == 0 ? 1 : n];
+		int* results = new int[n == 0 ? 1 : n];
 		DoAllFactorials(n, results, 0);
 		return results;
 	}
 
-	int DoAllFactorials(int n, int[] results, int level)
+	int DoAllFactorials(int n, int* results, int level)
 	{
 		// Àç±Í ÄÉÀÌ½º
 		if (n > 1)

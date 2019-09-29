@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="DijkstraAlgorithm.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="Palindrome.h" />
