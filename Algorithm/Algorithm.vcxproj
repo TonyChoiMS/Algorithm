@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
     <ClInclude Include="DijkstraAlgorithm.h" />
+    <ClInclude Include="Factorial.h" />
     <ClInclude Include="Palindrome.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
