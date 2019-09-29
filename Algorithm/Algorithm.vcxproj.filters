@@ -33,6 +33,9 @@
     <ClInclude Include="BinarySearch.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="RecursiveAlgorithm.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -48,6 +51,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Palindrome.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RecursiveAlgorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

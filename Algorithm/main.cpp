@@ -2,6 +2,7 @@
 #include "Algorithm.h"
 #include "DijkstraAlgorithm.h"
 #include "Palindrome.h"
+#include "RecursiveAlgorithm.h"
 
 using namespace std;
 
@@ -149,6 +150,14 @@ int main() {
 		cout << "회문이 아닙니다. " <<  str << endl;*/
 
 	cout << bPalindrom << endl;
+
+	string strRecursive = "asdf";
+	RecursiveAlgorithm* recur = new RecursiveAlgorithm;
+	recur->InitPermutations(strRecursive);
+
+	cout << "end " << endl;
+
+	recur->InitCombinationAlgorithm(strRecursive);
 
 	return 0;
 }
