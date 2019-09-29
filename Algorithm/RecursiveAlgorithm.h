@@ -92,7 +92,8 @@ private:
 
 	void Combine(int start)
 	{
-		for (int i = start; i < strIn.length(); i++)
+
+		for (int i = start; i < strIn.length(); ++i)
 		{
 			std::stringstream sstream;
 			sstream << strResult << strIn.at(i);
@@ -104,5 +105,8 @@ private:
 
 			strResult.resize(strResult.length() - 1);
 		}
+
+		// 반복문 분할
+		// for 반복문이 마지막으로 돌아갈 때 실행되어야 할 코드를 반복문의 밖으로 꺼내 if문을 없앤다.
 	}
 };
