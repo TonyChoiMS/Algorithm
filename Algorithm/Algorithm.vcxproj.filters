@@ -34,7 +34,10 @@
       <Filter>소스 파일</Filter>
     </ClInclude>
     <ClInclude Include="RecursiveAlgorithm.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SortAlgorithm.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -51,9 +54,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Palindrome.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="RecursiveAlgorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
