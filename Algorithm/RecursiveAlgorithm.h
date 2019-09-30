@@ -62,10 +62,21 @@ public:
 		Combine(0);
 	}
 
+	// 폰번호 단어
+	void TelephoneNumber(int* n)
+	{
+		phoneNumber = n;
+		PrintWords(0);
+	}
+
 private:
 	bool* used;
 	std::string strResult = "";
 	std::string strIn;
+	int* phoneNumber;
+	char* ResultWord;
+
+	const int PHONE_NUMBER_LENGTH = 7;
 	
 	int cnt = 0;
 
@@ -108,5 +119,155 @@ private:
 
 		// 반복문 분할
 		// for 반복문이 마지막으로 돌아갈 때 실행되어야 할 코드를 반복문의 밖으로 꺼내 if문을 없앤다.
+	}
+
+	void PrintWords(int curDigit)
+	{
+		if (curDigit == PHONE_NUMBER_LENGTH)
+		{
+			for (int i = 0; i < sizeof(ResultWord); i++)
+			{
+				std::cout << ResultWord[i];
+			}
+			std::cout << std::endl;
+			return;
+		}
+
+		for (int i = 1; i <= 3; ++i)
+		{
+			ResultWord[curDigit] = GetCharKey(phoneNumber[curDigit], i);
+			PrintWords(curDigit + 1);
+			if (phoneNumber[curDigit] == 0 ||
+				phoneNumber[curDigit] == 1)
+				return;
+		}
+	}
+
+	char GetCharKey(int telephoneKey, int place)
+	{
+		char charkey;
+
+		switch (telephoneKey)
+		{
+		case 2:
+			if (place == 1)
+			{
+				charkey = 'a';
+			}
+			else if (place == 2)
+			{
+				charkey = 'b';
+			}
+			else
+			{
+				charkey = 'c';
+			}
+			break;
+
+		case 3:
+			if (place == 1)
+			{
+				charkey = 'd';
+			}
+			else if (place == 2)
+			{
+				charkey = 'e';
+			}
+			else
+			{
+				charkey = 'f';
+			}
+			break;
+
+		case 4:
+			if (place == 1)
+			{
+				charkey = 'g';
+			}
+			else if (place == 2)
+			{
+				charkey = 'h';
+			}
+			else
+			{
+				charkey = 'i';
+			}
+			break;
+
+		case 5:
+			if (place == 1)
+			{
+				charkey = 'j';
+			}
+			else if (place == 2)
+			{
+				charkey = 'k';
+			}
+			else
+			{
+				charkey = 'l';
+			}
+			break;
+
+		case 6:
+			if (place == 1)
+			{
+				charkey = 'm';
+			}
+			else if (place == 2)
+			{
+				charkey = 'n';
+			}
+			else
+			{
+				charkey = 'o';
+			}
+			break;
+
+		case 7:
+			if (place == 1)
+			{
+				charkey = 'p';
+			}
+			else if (place == 2)
+			{
+				charkey = 'r';
+			}
+			else
+			{
+				charkey = 's';
+			}
+			break;
+			
+		case 8:
+			if (place == 1)
+			{
+				charkey = 't';
+			}
+			else if (place == 2)
+			{
+				charkey = 'u';
+			}
+			else
+			{
+				charkey = 'v';
+			}
+			break;
+
+		case 9:
+			if (place == 1)
+			{
+				charkey = 'w';
+			}
+			else if (place == 2)
+			{
+				charkey = 'x';
+			}
+			else
+			{
+				charkey = 'y';
+			}
+			break;
+		}
 	}
 };
