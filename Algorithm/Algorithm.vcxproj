@@ -155,6 +155,7 @@
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="DijkstraAlgorithm.h" />
     <ClInclude Include="Factorial.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Palindrome.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RecursiveAlgorithm.h" />
@@ -163,6 +164,7 @@
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />
     <ClCompile Include="DijkstraAlgorithm.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Palindrome.cpp" />
     <ClCompile Include="pch.cpp">
