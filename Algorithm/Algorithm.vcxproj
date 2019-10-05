@@ -152,9 +152,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="BFS.h" />
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="DijkstraAlgorithm.h" />
     <ClInclude Include="Factorial.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Palindrome.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PrevTest.h" />
@@ -163,7 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />
+    <ClCompile Include="BFS.cpp" />
     <ClCompile Include="DijkstraAlgorithm.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Palindrome.cpp" />
     <ClCompile Include="pch.cpp">
