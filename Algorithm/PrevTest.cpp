@@ -179,7 +179,8 @@ void PrevTest::Test2()
 			vector<int>({-6, -5}),
 			vector<int>({3, 3}),
 			vector<int>({5, -5})
-		});
+		}
+	);
 	//positions.push_back(vector<int>(0, 0));
 
 	int answer = 0;
@@ -233,7 +234,7 @@ bool PrevTest::era(long long n)
 
 void PrevTest::Test3()
 {
-	long long n = 6;
+	long long n = 12;
 	vector<long long> answer;
 
 	long long k = 2;
@@ -298,15 +299,17 @@ void PrevTest::Test3()
 		answer.push_back(-1);
 	}
 
-	cout << answer[0] << answer[1] << endl;
+	string result = correct ? "true" : "false";
+
+	cout << answer[0] << answer[1] << ", " << result << endl;
 	
 	//cout << answer << endl;
 }
 
 void PrevTest::solution()
 {
-	const int h = 5;
-	const int w = 5;
+	int h = 5;
+	int w = 5;
 	int n = 5;
 
 	vector<string> board = vector<string>({
@@ -314,21 +317,21 @@ void PrevTest::solution()
 
 	int answer = 0;
 
-	int arr[h][w];
+	vector<vector<int>> arr(h, vector<int>(w, 0));
 
+	// 입력
 	for (int y = 0; y < h; y++)
 	{
 		for (int x = 0; x < w; x++)
 		{
 			char aa = board[y].at(x);
-			
+			//arr[y].push_back(atoi(&aa));
 			arr[y][x] = atoi(&aa);
 			cout << board[y].at(x);
 		}
-
-		cout << "" << endl;
 	}
 
+	// 출력
 	for (int y = 0; y < h; y++)
 	{
 		for (int x = 0; x < w; x++)
@@ -337,7 +340,7 @@ void PrevTest::solution()
 			cout << current << endl;
 			if (current == 1)
 			{
-				if ((y >= 0 && y < h) && (x >= 1 && x < w))
+				if ((y >= 0 && y < h) && (x >= 0 && x < w))
 				{
 					vector<pair<int, int>> v;
 

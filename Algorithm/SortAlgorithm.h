@@ -17,6 +17,17 @@ public:
 		SelectionSortRecursive(data, 0);
 	}
 
+
+	// 안정적인 선택 정렬
+	// 안정적이라함은 키가 같은 원소의 순서를 입력된 순서 그대로 유지시켜주는 정렬 알고리즘을 뜻한다.
+	/*void StableInsertionSort(int* data)
+	{
+		for (int i = 0; i < sizeof(data) - 1; ++i)
+		{
+			StableInsert(data, i, findMinimumIndex(data, i));
+		}
+	}*/
+
 	// 삽입 정렬 알고리즘
 	// 이미 정렬되 있을 때 O(n)으로, 이때는 삽입 정렬이 효율적이다.
 	// 하지만 평균 및 최악의 경우엔 O(n^2)이므로, 무작위로 정렬된 많은 데이터를 처리하기엔 좋은 알고리즘은 아니다.
@@ -197,7 +208,7 @@ private:
 		}
 
 		// 아직 원소가 남은 배열에 있는 값을 복사함
-		while(lind < sizeof(left))
+		while (lind < sizeof(left))
 		{
 			dest[dind++] = left[lind++];
 		}
@@ -209,4 +220,15 @@ private:
 
 		return dest;
 	}
+
+	/*void StableInsert(vector<int> data, int start, int minIndex)
+	{
+		if (minIndex > start)
+		{
+			int tmp = data[minIndex];
+			data.insert()
+				data[start] = tmp;
+		}
+	}*/
+
 };

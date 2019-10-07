@@ -71,24 +71,24 @@ int main() {
 	//int recursive = algorithm->recursiveFibonacci(40);
 	//printf("recursive : %d\n", recursive);
 	int loop = algorithm->loopFibonacci(40);
-	printf("loop : %d\n", loop);
+	//printf("loop : %d\n", loop);
 	//long recursive = algorithm->fib(40);
 	//printf("recursiv : %d\n", recursive);
 	int case1 = algorithm->loopGreatestCommonDivisor(300, 150);
 	int case2 = algorithm->loopEuclideanGCD(300, 150);
 	int case3 = algorithm->recursiveEuclideanGCD(300, 150);
 	
-	printf("loop gcd : %d\n", case1);
-	printf("loop euclidean gcd : %d\n", case2);
-	printf("recursive gcd : %d\n", case3);
+	//printf("loop gcd : %d\n", case1);
+	//printf("loop euclidean gcd : %d\n", case2);
+	//printf("recursive gcd : %d\n", case3);
 	
 	int lcm1 = algorithm->loopLeastCommonMultiple(24, 7);
 	int lcm2 = algorithm->loopEuclideanLCM(24, 7);
-	printf("loop lcm : %d\n", lcm1);
-	printf("loop lcm : %d\n", lcm2);
+	//printf("loop lcm : %d\n", lcm1);
+	//printf("loop lcm : %d\n", lcm2);
 	
 	int coins[] = {10, 50, 100, 500};
-	algorithm->CoinChange(coins, 4, 2000);
+	//algorithm->CoinChange(coins, 4, 2000);
 	delete algorithm;
 	
 	DijkstraAlgorithm dijkstra(7);    // initialize, max node is 7
@@ -110,11 +110,11 @@ int main() {
     dijkstra.set(5, 6, 2);
 
     //최단경로 검색(0->6)
-    dijkstra.findPath(0, 6);
+    //dijkstra.findPath(0, 6);
 
 
 	// 가상함수 상속관계 확인
-	A *pA = new A;
+	/*A *pA = new A;
 	pA->f1();
 	pA->f2();
 	pA->f3();
@@ -124,7 +124,7 @@ int main() {
 	pA->f1();
 	pA->f2();
 	pA->f3();
-	delete pA;
+	delete pA;*/
 
 
 	// 팰린드롬 알고리즘
@@ -136,10 +136,10 @@ int main() {
 
 	bPalindrom = palindrome.PalindromAlgorithmToInt(12321);
 
-	if (bPalindrom)
+	/*if (bPalindrom)
 		cout << n << ": 회문 숫자입니다." << endl;
 	else
-		cout << n << ": 회문 숫자가 아닙니다." << endl;
+		cout << n << ": 회문 숫자가 아닙니다." << endl;*/
 
 	cout << bPalindrom << endl;
 	string str = "asdfdsa";
@@ -150,19 +150,19 @@ int main() {
 	else
 		cout << "회문이 아닙니다. " <<  str << endl;*/
 
-	cout << bPalindrom << endl;
+	//cout << bPalindrom << endl;
 
 	string strRecursive = "asdf";
 	RecursiveAlgorithm* recur = new RecursiveAlgorithm;
-	recur->InitPermutations(strRecursive);
+	//recur->InitPermutations(strRecursive);
 
 	cout << "end " << endl;
 
-	recur->InitCombinationAlgorithm(strRecursive);
+	//recur->InitCombinationAlgorithm(strRecursive);
 
 	PrevTest* prev = new PrevTest;
 
-	prev->KakaoTest1();
+	//prev->KakaoTest1();
 	prev->solution();
 
 	return 0;
