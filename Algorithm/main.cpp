@@ -3,6 +3,7 @@
 #include "DijkstraAlgorithm.h"
 #include "Palindrome.h"
 #include "RecursiveAlgorithm.h"
+#include "PrevTest.h"
 
 using namespace std;
 
@@ -158,6 +159,11 @@ int main() {
 	cout << "end " << endl;
 
 	recur->InitCombinationAlgorithm(strRecursive);
+
+	PrevTest* prev = new PrevTest;
+
+	prev->KakaoTest1();
+	prev->solution();
 
 	return 0;
 }
