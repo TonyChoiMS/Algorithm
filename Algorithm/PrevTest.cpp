@@ -1,7 +1,50 @@
 #include "PrevTest.h"
 #include <queue>
+#include <string>
+#include <vector>
+#include <cmath>
 
 using namespace std;
+
+
+/**
+ * 코테 3.
+ * 자연수 n이 주어질 때 n을 서로 다른 두 소수의 곱으로 나타낼 수 있는지를 알아보려 합니다. 예를들어 n = 6이면,
+ * 서로 다른 두 소수 2와 3의 곱으로 나타낼 수 있습니다. 그러나 n = 12라면 더로 다른 두 소수의 곱으로 나타낼 수 없습니다.
+ * 자연수 n이 매개변수로 주어질 때, 곱해서 n이 되는 서로 다른 두 소수를 찾아 return 하도록 solution 함수를 완성해주세요.
+ * 제한사항
+ * 1. n은 2이상 10^12 이하의 자연수입니다.
+ * 2. n을 서로 다른 두 소수의 곱으로 나타낼 수 있다면, 해당하는 두 소수를 오름차순으로 정렬해서 배열 형태로 return해주세요.
+ * 3. 만약 n을 서로 다른 두 소수의 곱으로 나타낼 수 없다면 [-1, -1]을 return 해주세요.
+ */
+bool IsPrime(long long n)
+{
+	long long end = sqrt(n);
+	for (long long i = 0; i <= end; ++i)
+	{
+		if (n % i == 0)
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+
+void PrevTest::Test3()
+{
+	long long n = 1234124214;
+
+	if (IsPrime(n))
+	{
+		
+	}
+	else
+	{
+
+	}
+}
+
 /**
  * LINE 2019 상반기 인턴채용 코테 1번.
  * 문제 : 연인 코니와 브라운은 광활한 들판에서 '나 잡아봐라' 게임을 한다. 이 게임은 브라운이 코니를 잡거나, 코니가 너무 멀리 달아나면 끝난다. 게임이 끝나는데 걸리는 최소 시간을 구하시오.
