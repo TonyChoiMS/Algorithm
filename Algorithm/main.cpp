@@ -60,6 +60,21 @@ public:
 	virtual void f4() { cout << "B :: f4" << endl; }
 };
 
+int NumOnesInBinary(int number)
+{
+	int numOnes = 0;
+	while (number != 0)
+	{
+		if ((number & 1) == 1)
+		{
+			numOnes++;
+		}
+		number = number >> 1;
+	}
+
+	return numOnes;
+}
+
 
 int main() {
 	//int nt;
@@ -128,7 +143,7 @@ int main() {
 
 
 	// 팰린드롬 알고리즘
-	int n = 12321;
+	//int n = 12321;
 
 	bool bPalindrom = false;
 
@@ -163,7 +178,27 @@ int main() {
 	PrevTest* prev = new PrevTest;
 
 	//prev->KakaoTest1();
-	prev->solution();
+	//prev->solution();
+
+
+	int k, n;
+	char arr[] = "Mega Value!!";
+	char temp;
+	n = strlen(arr);
+	n--;
+	for (k = 0; k < n; k++)
+	{
+		temp = *(arr + k);
+		*(arr + k) = *(arr + n);
+		*(arr + n) = temp;
+		n--;
+	}
+
+	printf(" answer %s/n", arr);
+
+	int ShiftNum = NumOnesInBinary(100);
+
+	printf("%n    asdf", ShiftNum);
 
 	return 0;
 }
