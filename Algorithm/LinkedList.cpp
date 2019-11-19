@@ -217,6 +217,40 @@ bool CustomStack::insertAfter(Element * elem, int data)
 	return false;
 }
 
+void LinkedList::append(Node *child, Node **tail)
+{
+	Node *curNode;
+
+	// 자식 리스트를 맨 뒤에 붙인다.
+	(*tail)->next = child;
+	child->prev = *tail;
+
+	// 새로운 꼬리가 될 자식 리스트의 끝을 찾아낸다.
+	for (curNode = child; curNode->next; curNode = curNode->next)
+		;
+	// 생략
+
+	// 이제  curNode가 꼬리 노드가 되었으므로 꼬리 포인터를 갱신한다.
+	*tail = curNode;
+}
+
+/**
+ *		리스트 단층화
+ **/
+void LinkedList::flattenList(Node * head, Node ** tail)
+{
+	Node *curNode = head;
+	while (curNode)
+	{
+		// 현재 노드에 자식이 있는 경우
+		if (curNode->child)
+		{
+			append(curNode->child, tail);
+		}
+		curNode = curNode->next;
+	}
+}
+
 ListElement<int>* LinkedList::FindMToLastElement(ListElement<int>* head, int m)
 {
 	ListElement<int> *current, *mBehind;
@@ -253,11 +287,3 @@ ListElement<int>* LinkedList::FindMToLastElement(ListElement<int>* head, int m)
 	// 가리키므로 mBehind를 리턴하면 된다.
 	return mBehind;
 }
-
-typedef struct Node
-{
-	struct Node *next;
-	struct Node *prev;
-	struct Node *child;
-	int value;
-} Node;

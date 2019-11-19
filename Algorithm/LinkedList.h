@@ -22,6 +22,14 @@ private:
 class LinkedList
 {
 public:
+	typedef struct Node
+	{
+		struct Node *next;
+		struct Node *prev;
+		struct Node *child;
+		int value;
+	} Node;
+
 	LinkedList(int value);
 	~LinkedList();
 
@@ -29,6 +37,8 @@ public:
 	void PopFront();
 	void Insert(int value);
 	void Print();
+	void append(Node *child, Node **tail);
+	void flattenList(Node *head, Node **tail);
 	ListElement<int>* FindMToLastElement(ListElement<int>* head, int m);
 	bool DeleteElement(ListElement<int> **head, ListElement<int> *deleteMe)
 	{
