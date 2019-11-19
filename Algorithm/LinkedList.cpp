@@ -1,3 +1,4 @@
+#include "LinkedList.h"
 //#include "LinkedList.h"
 //#include <iostream>
 //
@@ -94,3 +95,169 @@
 //}
 //
 //
+
+CustomStack::CustomStack()
+{
+}
+
+CustomStack::~CustomStack()
+{
+	while (head)
+	{
+		Element *next = head->getNext();
+		delete head;
+		head = next;
+	}
+}
+
+void CustomStack::push(void * data)
+{
+	// 메모리 할당 오류가 발생하면 예외가 발생됨
+	Element *element = new Element(head, data);
+	head = element;
+}
+
+void * CustomStack::pop()
+{
+	Element *popElement = head;
+	void *data;
+
+	// StackError 예외 클래스는 다른 데서 정의했다고 가정
+	if (head == nullptr)
+	{
+		//throw StackError(E_EMPTY);
+	}
+
+	data = head->value();
+	head = head->getNext();
+	delete popElement;
+
+	return data;
+	return nullptr;
+}
+
+bool CustomStack::deleteStack(Element * elem)
+{
+	Element *curPos = head;
+
+	if (!elem)
+		return false;
+
+	if (elem == head)
+	{
+		head = elem->getNext();
+		delete elem;
+
+		// 원소가 한 개 뿐인 리스트의 경우
+		if (!head)
+			tail = nullptr;
+
+		return true;
+	}
+
+	while (curPos)
+	{
+		if (curPos->getNext() == elem)
+		{
+			curPos->setNext(elem->getNext());
+			delete elem;
+			if (curPos->getNext() == nullptr)
+				tail = curPos;
+
+			return true;
+		}
+
+		curPos = curPos->getNext();
+	}
+
+	return false;
+}
+
+bool CustomStack::insertAfter(Element * elem, int data)
+{
+	Element *newElem, *curPos = head;
+
+	newElem = new Element(nullptr, data);
+	if (!newElem)
+	{
+		return false;
+	}
+	newElem->value = data;
+
+	// 리스트의 맨 앞에 삽입하는 경우
+	if (!elem)
+	{
+		newElem->setNext(head);
+		head = newElem;
+
+		// 비어있는 리스트의 경우
+		if (!tail)
+			tail = newElem;
+		
+		return true;
+	}
+
+	while (curPos)
+	{
+		if (curPos == elem)
+		{
+			newElem->setNext(curPos->getNext());
+			curPos->setNext(newElem);
+
+			// 리스트의 맨 뒤에 추가하는 경우
+			if (!(newElem->getNext()))
+				tail = newElem;
+			return true;
+		}
+		curPos = curPos->getNext();
+	}
+
+	// 삽입할 위치를 못찾은 경우, 할당된 메모리를 비우고 false를 반환한다.
+	delete newElem;
+	return false;
+}
+
+ListElement<int>* LinkedList::FindMToLastElement(ListElement<int>* head, int m)
+{
+	ListElement<int> *current, *mBehind;
+	int i;
+	if (!head)
+	{
+		return nullptr;
+	}
+	// 리스트가 끝나지 않는지 확인하면서 앞에서부터 m개의 원소를 센다.
+
+	current = head;
+	for (int i = 0; i < m; i++)
+	{
+		if (current->next)
+		{
+			current = current->next;
+		}
+		else
+		{
+			return nullptr;
+		}
+	}
+
+	// mBehind를 head 포인터로 설정한 다음 current 포인터가
+	// 마지막 원소를 가리키게 될 때까지 mBehind와 current를 함께 전진시킨다.
+	mBehind = head;
+	while (current->next)
+	{
+		current = current->next;
+		mBehind = mBehind->next;
+	}
+
+	// 이제 mBehind가 우리가 찾으려고 했던 원소를
+	// 가리키므로 mBehind를 리턴하면 된다.
+	return mBehind;
+}
+
+typedef struct Node
+{
+	struct Node *next;
+	struct Node *prev;
+	struct Node *child;
+	int value;
+} Node;
