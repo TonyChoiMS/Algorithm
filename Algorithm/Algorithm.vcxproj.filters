@@ -19,6 +19,12 @@
     <Filter Include="헤더 파일\LeetCode">
       <UniqueIdentifier>{8daf9970-1699-4103-9e64-9e2f772227e0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Interview">
+      <UniqueIdentifier>{c5de44be-dbdf-4b1d-a6d1-f83729786238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Interview">
+      <UniqueIdentifier>{2ba8cca0-5b26-4250-968c-08d4c547e44d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -57,6 +63,9 @@
     <ClInclude Include="RemoveDuplicatesFromSortedArray.h">
       <Filter>헤더 파일\LeetCode</Filter>
     </ClInclude>
+    <ClInclude Include="InterView.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -82,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="BFS.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InterView.cpp">
+      <Filter>소스 파일\Interview</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
