@@ -197,8 +197,6 @@ int main() {
 	printf(" answer %s/n", arr);
 
 	int ShiftNum = NumOnesInBinary(100);
-
-	printf("%n    asdf", ShiftNum);
-
+	cout << ShiftNum << endl;
 	return 0;
 }

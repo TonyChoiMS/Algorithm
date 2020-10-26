@@ -93,7 +93,7 @@ protected:
 		Element(Element *n, void *d) : next(n), data(d) {}
 		Element *getNext() const { return next; }
 		void *value() const { return data; }
-		Element *setNext(Element *elem) { next = elem; }
+		Element *setNext(Element *elem) { next = elem; return next; }
 	private:
 		Element *next;
 		void *data;

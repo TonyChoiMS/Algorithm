@@ -175,45 +175,45 @@ bool CustomStack::deleteStack(Element * elem)
 
 bool CustomStack::insertAfter(Element * elem, int data)
 {
-	Element *newElem, *curPos = head;
+	//Element *newElem, *curPos = head;
 
-	newElem = new Element(nullptr, data);
-	if (!newElem)
-	{
-		return false;
-	}
-	newElem->value = data;
+	//newElem = new Element(nullptr, (void)data);
+	//if (!newElem)
+	//{
+	//	return false;
+	//}
+	//newElem->value = data;
 
-	// 리스트의 맨 앞에 삽입하는 경우
-	if (!elem)
-	{
-		newElem->setNext(head);
-		head = newElem;
+	//// 리스트의 맨 앞에 삽입하는 경우
+	//if (!elem)
+	//{
+	//	newElem->setNext(head);
+	//	head = newElem;
 
-		// 비어있는 리스트의 경우
-		if (!tail)
-			tail = newElem;
-		
-		return true;
-	}
+	//	// 비어있는 리스트의 경우
+	//	if (!tail)
+	//		tail = newElem;
+	//	
+	//	return true;
+	//}
 
-	while (curPos)
-	{
-		if (curPos == elem)
-		{
-			newElem->setNext(curPos->getNext());
-			curPos->setNext(newElem);
+	//while (curPos)
+	//{
+	//	if (curPos == elem)
+	//	{
+	//		newElem->setNext(curPos->getNext());
+	//		curPos->setNext(newElem);
 
-			// 리스트의 맨 뒤에 추가하는 경우
-			if (!(newElem->getNext()))
-				tail = newElem;
-			return true;
-		}
-		curPos = curPos->getNext();
-	}
+	//		// 리스트의 맨 뒤에 추가하는 경우
+	//		if (!(newElem->getNext()))
+	//			tail = newElem;
+	//		return true;
+	//	}
+	//	curPos = curPos->getNext();
+	//}
 
-	// 삽입할 위치를 못찾은 경우, 할당된 메모리를 비우고 false를 반환한다.
-	delete newElem;
+	//// 삽입할 위치를 못찾은 경우, 할당된 메모리를 비우고 false를 반환한다.
+	//delete newElem;
 	return false;
 }
 

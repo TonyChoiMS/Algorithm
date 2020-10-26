@@ -16,12 +16,8 @@
 
 using namespace std;
 
-PrevTest::PrevTest()
-{
-}
-PrevTest::~PrevTest()
-{
-}
+PrevTest::PrevTest() {}
+PrevTest::~PrevTest() {}
 
 /**
  * ฤฺลื 3.
@@ -45,20 +41,6 @@ bool IsPrime(long long n)
 	}
 
 	return true;
-}
-
-void PrevTest::Test3()
-{
-	long long n = 1234124214;
-
-	if (IsPrime(n))
-	{
-		
-	}
-	else
-	{
-
-	}
 }
 
 /**
