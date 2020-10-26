@@ -1,3 +1,1 @@
-﻿  LinkedList.cpp
-c:\users\minlion\desktop\study\algorithm\algorithm\linkedlist.cpp(257): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-  Algorithm.vcxproj -> C:\Users\MinLion\Desktop\Study\Algorithm\x64\Debug\Algorithm.exe
+﻿  Algorithm.vcxproj -> C:\Users\MinLion\Desktop\Study\Algorithm\x64\Debug\Algorithm.exe
