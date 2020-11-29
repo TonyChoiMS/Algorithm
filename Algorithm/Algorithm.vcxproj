@@ -164,6 +164,7 @@
     <ClInclude Include="RecursiveAlgorithm.h" />
     <ClInclude Include="RemoveDuplicatesFromSortedArray.h" />
     <ClInclude Include="SortAlgorithm.h" />
+    <ClInclude Include="StringToInteger.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />

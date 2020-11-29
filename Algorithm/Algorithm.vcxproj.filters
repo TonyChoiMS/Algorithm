@@ -66,6 +66,9 @@
     <ClInclude Include="InterView.h">
       <Filter>헤더 파일\Interview</Filter>
     </ClInclude>
+    <ClInclude Include="StringToInteger.h">
+      <Filter>헤더 파일\LeetCode</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
