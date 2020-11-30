@@ -45,7 +45,7 @@ public :
 		//std::cout << answer << std::endl;
 		if (answer > 2147483647)
 			return 2147483647;
-		else if (answer < -2147483647)
+		else if (answer < -2147483647)				// LeetCode에서는 2147483648로 설정해야 패스할 수 있음. 컴파일러의 차이로, 2147483648을 입력할 경우 unsigned 범위을 넘어간다는 에러 때문에 컴파일 안됨.
 			return -2147483647;
 		else return answer;
 	}

@@ -5,6 +5,7 @@
 #include "RecursiveAlgorithm.h"
 #include "PrevTest.h"
 #include "StringToInteger.h"
+#include "ImplementStrStr.h"
 
 using namespace std;
 
@@ -200,8 +201,10 @@ int main() {
 	int ShiftNum = NumOnesInBinary(100);
 	cout << ShiftNum << endl;*/
 
-	StringToInteger strToInt;
-	cout << strToInt.myAtoi("-91283472332") << endl;
+	/*StringToInteger strToInt;
+	cout << strToInt.myAtoi("-91283472332") << endl;*/
+	ImplementStrStr sss;
+	sss.strStr("hello", "ll");
 
 	return 0;
 }
