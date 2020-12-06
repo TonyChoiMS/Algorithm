@@ -154,6 +154,7 @@
     <ClInclude Include="Algorithm.h" />
     <ClInclude Include="BFS.h" />
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="CountAndSay.h" />
     <ClInclude Include="DijkstraAlgorithm.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="InterView.h" />

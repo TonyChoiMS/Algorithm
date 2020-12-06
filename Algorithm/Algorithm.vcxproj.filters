@@ -72,6 +72,9 @@
     <ClInclude Include="ImplementStrStr.h">
       <Filter>헤더 파일\LeetCode</Filter>
     </ClInclude>
+    <ClInclude Include="CountAndSay.h">
+      <Filter>헤더 파일\LeetCode</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
