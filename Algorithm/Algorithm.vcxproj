@@ -159,6 +159,7 @@
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="InterView.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LongestCommonPrefix.h" />
     <ClInclude Include="Palindrome.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PrevTest.h" />
