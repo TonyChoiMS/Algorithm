@@ -78,6 +78,15 @@
     <ClInclude Include="LongestCommonPrefix.h">
       <Filter>헤더 파일\LeetCode</Filter>
     </ClInclude>
+    <ClInclude Include="ParseInt.h">
+      <Filter>헤더 파일\LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="CalcNumCount.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplorePoint.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

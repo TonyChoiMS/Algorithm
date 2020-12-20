@@ -154,13 +154,16 @@
     <ClInclude Include="Algorithm.h" />
     <ClInclude Include="BFS.h" />
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="CalcNumCount.h" />
     <ClInclude Include="CountAndSay.h" />
     <ClInclude Include="DijkstraAlgorithm.h" />
+    <ClInclude Include="ExplorePoint.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="InterView.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LongestCommonPrefix.h" />
     <ClInclude Include="Palindrome.h" />
+    <ClInclude Include="ParseInt.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PrevTest.h" />
     <ClInclude Include="RecursiveAlgorithm.h" />
