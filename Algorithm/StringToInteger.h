@@ -49,5 +49,36 @@ public :
 			return -2147483647;
 		else return answer;
 	}
+
+	// Interview에 나온 풀이
+	int StrToInt(std::string str)
+	{
+		int i = 0;
+		int num = 0;
+		bool bIsNeg = false;
+		int length = str.length();
+
+		while (str[i] == ' ')
+		{
+			i++;
+		}
+
+		if (str.at(i) == '-')
+		{
+			bIsNeg = true;
+			i++;
+		}
+
+		while (i < length)
+		{
+			num *= 10;
+			num += (str.at(i++) - '0');
+		}
+
+		if (bIsNeg)
+			num = -num;
+
+		return num;
+	}
 };
 

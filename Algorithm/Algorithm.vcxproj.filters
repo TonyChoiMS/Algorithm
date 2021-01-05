@@ -27,39 +27,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithm.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DijkstraAlgorithm.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Palindrome.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Factorial.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="BinarySearch.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="RecursiveAlgorithm.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="SortAlgorithm.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="PrevTest.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkedList.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="BFS.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="RemoveDuplicatesFromSortedArray.h">
       <Filter>헤더 파일\LeetCode</Filter>
     </ClInclude>
@@ -90,6 +57,42 @@
     <ClInclude Include="MergeTwoLists.h">
       <Filter>헤더 파일\LeetCode</Filter>
     </ClInclude>
+    <ClInclude Include="wcReverseWords.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="BFS.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="DijkstraAlgorithm.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="Palindrome.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="PrevTest.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="RecursiveAlgorithm.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="SortAlgorithm.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
+    <ClInclude Include="Factorial.h">
+      <Filter>헤더 파일\Interview</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -98,25 +101,25 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="InterView.cpp">
+      <Filter>소스 파일\Interview</Filter>
+    </ClCompile>
     <ClCompile Include="Algorithm.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DijkstraAlgorithm.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Palindrome.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PrevTest.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LinkedList.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Interview</Filter>
     </ClCompile>
     <ClCompile Include="BFS.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Interview</Filter>
     </ClCompile>
-    <ClCompile Include="InterView.cpp">
+    <ClCompile Include="DijkstraAlgorithm.cpp">
+      <Filter>소스 파일\Interview</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>소스 파일\Interview</Filter>
+    </ClCompile>
+    <ClCompile Include="Palindrome.cpp">
+      <Filter>소스 파일\Interview</Filter>
+    </ClCompile>
+    <ClCompile Include="PrevTest.cpp">
       <Filter>소스 파일\Interview</Filter>
     </ClCompile>
   </ItemGroup>

@@ -172,6 +172,7 @@
     <ClInclude Include="SortAlgorithm.h" />
     <ClInclude Include="StringToInteger.h" />
     <ClInclude Include="ImplementStrStr.h" />
+    <ClInclude Include="wcReverseWords.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />
