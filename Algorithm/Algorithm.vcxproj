@@ -163,12 +163,15 @@
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LongestCommonPrefix.h" />
     <ClInclude Include="MergeTwoLists.h" />
+    <ClInclude Include="MultiThreadTest.h" />
     <ClInclude Include="Palindrome.h" />
     <ClInclude Include="ParseInt.h" />
+    <ClInclude Include="ParseJson.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PrevTest.h" />
     <ClInclude Include="RecursiveAlgorithm.h" />
     <ClInclude Include="RemoveDuplicatesFromSortedArray.h" />
+    <ClInclude Include="ReverseBits.h" />
     <ClInclude Include="SortAlgorithm.h" />
     <ClInclude Include="StringToInteger.h" />
     <ClInclude Include="ImplementStrStr.h" />
@@ -181,7 +184,9 @@
     <ClCompile Include="InterView.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MultiThreadTest.cpp" />
     <ClCompile Include="Palindrome.cpp" />
+    <ClCompile Include="ParseJson.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

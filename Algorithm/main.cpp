@@ -6,6 +6,7 @@
 #include "PrevTest.h"
 #include "StringToInteger.h"
 #include "ImplementStrStr.h"
+#include "ParseJson.h"
 
 using namespace std;
 
@@ -203,8 +204,38 @@ int main() {
 
 	/*StringToInteger strToInt;
 	cout << strToInt.myAtoi("-91283472332") << endl;*/
-	ImplementStrStr sss;
-	sss.strStr("hello", "ll");
+	/*ImplementStrStr sss;
+	sss.strStr("hello", "ll");*/
+
+	ParseJson pJson;
+	int size;	// 문서의 크기
+	char *doc = pJson.ReadFile("example.json", &size);		// 파일에서 JSON 문서를 읽음, 문서 크기를 구함
+	if (doc == nullptr)
+		return -1;
+
+	JSON json;// = { 0, };	// JSON 구조체 변수 선언 및 초기화
+
+	pJson.Parse(doc, size, &json);	// JSON 문서 파싱
+
+	printf("Title: %s\n", json.tokens[1].string);
+	printf("Year: %d\n", (int)json.tokens[3].number);    // 토큰에 저장된 숫자 출력(Year)
+	printf("Runtime: %d\n", (int)json.tokens[5].number); // 토큰에 저장된 숫자 출력(Runtime)
+	printf("Genre: %s\n", json.tokens[7].string);        // 토큰에 저장된 문자열 출력(Genre)
+	printf("Director: %s\n", json.tokens[9].string);     // 토큰에 저장된 문자열 출력(Director)
+
+	printf("Actors:\n");
+	int actors = pJson.GetArrayCount(&json, "Actors");                // Actors 배열의 개수를 구함
+	for (int i = 0; i < actors; i++)                            // 배열의 요소 개수만큼 반복
+		printf("  %s\n", pJson.GetArrayString(&json, "Actors", i));   // 인덱스를 지정하여 문자열을 가져옴
+
+	printf("imdbRating: %f\n", json.tokens[17].number);  // 토큰에 저장된 숫자 출력(imdbRating)
+
+
+	pJson.FreeJson(&json);		// json에 할당된 동적 메모리 해제
+
+	free(doc);					// 문서 동적 메모리 해제
+
+
 
 	return 0;
 }
