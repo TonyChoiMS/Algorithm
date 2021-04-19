@@ -3,6 +3,7 @@
 #include <iostream>
 #include <Windows.h>
 #include <process.h>
+#include <bitset>
 
 using namespace std;
 
@@ -19,5 +20,9 @@ private:
 public:
 	
 	void Test();
+	void BitTest();
+
+	void NthBitSet(unsigned char c, int n, bool flagOn);
+
 };
 

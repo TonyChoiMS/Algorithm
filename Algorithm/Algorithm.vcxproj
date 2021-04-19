@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="AplindromeLinkedList.h" />
     <ClInclude Include="BFS.h" />
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="CalcNumCount.h" />

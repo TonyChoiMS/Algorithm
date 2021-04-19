@@ -7,6 +7,9 @@
 #include "StringToInteger.h"
 #include "ImplementStrStr.h"
 #include "ParseJson.h"
+#include "MultiThreadTest.h"
+#include "SortAlgorithm.h"
+#include "AplindromeLinkedList.h"
 
 using namespace std;
 
@@ -78,6 +81,12 @@ int NumOnesInBinary(int number)
 	return numOnes;
 }
 
+void Solution11() 
+{
+
+}
+
+
 
 int main() {
 	//int nt;
@@ -132,7 +141,7 @@ int main() {
 
 
 	// 가상함수 상속관계 확인
-	/*A *pA = new A;
+	auto *pA = new A;
 	pA->f1();
 	pA->f2();
 	pA->f3();
@@ -142,7 +151,7 @@ int main() {
 	pA->f1();
 	pA->f2();
 	pA->f3();
-	delete pA;*/
+	delete pA;
 
 
 	// 팰린드롬 알고리즘
@@ -235,6 +244,17 @@ int main() {
 
 	free(doc);					// 문서 동적 메모리 해제
 
+	MultiThreadTest mt;
+	mt.BitTest();
+
+	SortAlgorithm so;
+	int data[] = {3, 9, 4, 7, 5, 0, 1, 6, 8, 2};
+	so.PrintQuickSort(data);
+	so.QuickSort(data);
+	so.PrintQuickSort(data);
+
+	PalindromeLinkedList pl;
+	pl.Start();
 
 
 	return 0;

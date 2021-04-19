@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 
-#define Swap(a, b, temp) temp = a; a = b; b = temp;
+//#define Swap(a, b, temp) temp = a; a = b; b = temp;
 
 class RecursiveAlgorithm
 {
@@ -48,9 +48,9 @@ public:
 		{
 			for (int i = k; i <= m; i++)
 			{
-				Swap(a[k], a[i], temp);					// a[k]와 a[i]를 교환
+				Swap(a, k, i);					// a[k]와 a[i]를 교환
 				InitPermutationsInt(a, k + 1, m);		// a[k+1], ... a[m]에 대한 모든 순열
-				Swap(a[k], a[i], temp);					// 원래 상태로 되돌리기 위해 a[k]와 a[i]를 다시 교환
+				Swap(a, k, i);					// 원래 상태로 되돌리기 위해 a[k]와 a[i]를 다시 교환
 			}
 		}
 	}
@@ -140,6 +140,16 @@ private:
 			if (phoneNumber[curDigit] == 0 ||
 				phoneNumber[curDigit] == 1)
 				return;
+		}
+	}
+
+	void Swap(int* data, int index1, int index2)
+	{
+		if (index1 != index2)
+		{
+			int temp = data[index1];
+			data[index1] = data[index2];
+			data[index2] = temp;
 		}
 	}
 

@@ -66,3 +66,44 @@ void MultiThreadTest::Test()
 	cout << "main test int " << testInt << endl;
 	cout << "main exit " << endl;
 }
+
+void MultiThreadTest::BitTest()
+{
+	unsigned char c = 0;
+	std::cout << std::bitset<8>(c) << std::endl;			// 0000 0000
+
+	//1번 비트 변환.
+	c |= 1;													// 0000 0000 OR 0000 00001
+	std::cout << std::bitset<8>(c) << std::endl;			// 0000 0001
+
+	c |= (1 << 1);											// 0000 0001 OR 0000 0010
+	std::cout << std::bitset<8>(c) << std::endl;			// 0000 0011
+
+	c &= ~(1 << 0);											// 0000 0011 AND 1111 1110
+	std::cout << std::bitset<8>(c) << std::endl;			// 0000 0010
+
+	c &= ~(1 << 1);											// 0000 0010 AND 1111 1101
+	std::cout << std::bitset<8>(c) << std::endl;			// 0000 0000
+
+	c |= (1 << 1);
+
+	// 4번째 비트 번환.
+	NthBitSet(c, 4, false);									// 0001 0000
+}
+
+
+// flag on  = 0 -> 1
+// flag off = 1 -> 0
+void MultiThreadTest::NthBitSet(unsigned char c, int n, bool flagOn)
+{
+	if (flagOn)
+	{
+		c &= ~(1 << n);
+	}
+	else
+	{
+		c |= (1 << n);
+	}
+
+	std::cout << "NthBitSet n : " << n << ", Result :" << std::bitset<8>(c) << endl;
+}

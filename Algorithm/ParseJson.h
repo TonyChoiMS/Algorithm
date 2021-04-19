@@ -7,16 +7,16 @@
 #include <string.h>    // strchr, memset, memcpy 함수가 선언된 헤더 파일
 
 // 토큰 종류
-typedef enum _TOKEN_TYPE
+typedef enum TOKEN_TYPE_
 {
 	TOKEN_STRING,
 	TOKEN_NUMBER,
-} TOKEN_TYPE;
+} TOKEN_TYPE_;
 
 // 토큰 구조체
 typedef struct _TOKEN
 {
-	TOKEN_TYPE type;
+	TOKEN_TYPE_ type;
 	union
 	{
 		// 두 종류 중 한 종류만 저장할 것이므로 공용체로 선언

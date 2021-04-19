@@ -1,11 +1,13 @@
 #pragma once
+#include <iostream>
 
 class SortAlgorithm
 {
 public:
-	SortAlgorithm();
-	~SortAlgorithm();
+	SortAlgorithm() {};
+	~SortAlgorithm() {};
 
+	
 	// 선택 정렬 알고리즘
 	// 최선, 평균, 최악의 경우 모두 O(n^2)이다. 처음 시작할 때의 정렬 상태는 비교 회수에 전혀 영향을 끼치지 않는다.
 	// 그렇다고 알고리즘의 효율이 다른 정렬 알고리즘에 비해 좋은 편은 아님.
@@ -55,56 +57,55 @@ public:
 	// 더 이상 쪼갤 부분집합이 없을 때까지 각각의 부분집합에 대해 피벗.쪼개기 작업을 재귀적으로 적용한다.
 	// 퀵 정렬은 어떤 피벗값을 고르는지에 따라 성능이 결정된다.
 	// 가장 이상적인 피벗 값은 전체 데이터를 절반씩으로 쪼갤 수 있는 값이다.
-	//int* QuickSort(int* data)
-	//{
-	//	int Length = sizeof(data);
-	//	if (Length < 2)
-	//	{
-	//		return data;
-	//	}
+	// 분할정복
+	// 현재 함수 상태는 오름차순 정렬의 상태이며, 내림차순으로 하길 원할 경우, Partition 함수 중 표시한 곳의 부호만 반대로 해주면된다.
+	void QuickSort(int* data)
+	{
+		QuickSort(data, 0, sizeof(data) - 1);
+	}
 
-	//	int pivotIndex = Length / 2;
-	//	int pivotValue = data[pivotIndex];
+	void QuickSort(int* data, int start, int end)
+	{
+		int part2 = Partition(data, start, end);
+		if (start < part2 - 1)
+		{
+			QuickSort(data, start, part2 - 1);
+		}
+		
+		if (part2 < end)
+		{
+			QuickSort(data, part2, end);
+		}
+	}
 
-	//	int leftCount = 0;
+	int Partition(int* data, int start, int end)
+	{
+		int pivot = data[(start + end) / 2];
+		while (start <= end)
+		{
+			while (data[start] < pivot) start++;			// 표시
+			while (data[end] > pivot) end--;				// 표시
+			if (start <= end)
+			{
+				Swap(data, start, end);
+				start++;
+				end--;
+			}
+		}
 
-	//	// 피벗보다 작은 원소 개수 세기
-	//	for (int i = 0; i < Length; i++)
-	//	{
-	//		if (data[i] < pivotValue) 
-	//			++leftCount;
-	//	}
-	//	
-	//	// 배열 할당 및 부분집합 만들기
-	//	int* left = new int[leftCount];
-	//	int* right = new int[Length - leftCount - 1];
-	//	int l = 0;
-	//	int  r = 0;
+		return start;
+	}
 
-	//	for (int i = 0; i < Length; i++)
-	//	{
-	//		if (i == pivotIndex) 
-	//			continue;
+	void PrintQuickSort(int* data)
+	{
+		for (int i = 0; i < sizeof(data); i++)
+		{
+			std::cout << data[i] << std::endl;
+		}
 
-	//		int value = data[i];
-
-	//		if (value < pivotValue)
-	//		{
-	//			left[l++] = value;
-	//		}
-	//		else
-	//		{
-	//			right[r++] = value;
-	//		}
-	//	}
-
-	//	// 부분집합 정렬
-	//	left = QuickSort(left);
-	//	right = QuickSort(right);
-
-	//	// 정렬된 배열들과 피벗을 합쳐서 원래 배열로 만듦
-	//	system.array
-	//}
+		std::cout << "end " << std::endl;
+	}
+		
 
 	// 합치기 정렬(Merge Sort)
 	// 데이터 집합을 둘 이상의 부분집합으로 가르고, 각 부분집합을 정렬한 다음 다시 정렬된 형태로 합치는 방식
