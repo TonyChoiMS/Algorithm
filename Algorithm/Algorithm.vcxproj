@@ -163,6 +163,7 @@
     <ClInclude Include="InterView.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LongestCommonPrefix.h" />
+    <ClInclude Include="MaximumDepthOfBinaryTree.h" />
     <ClInclude Include="MergeTwoLists.h" />
     <ClInclude Include="MultiThreadTest.h" />
     <ClInclude Include="Palindrome.h" />
