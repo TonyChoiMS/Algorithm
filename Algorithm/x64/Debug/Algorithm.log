@@ -1,8 +1,17 @@
 ﻿  main.cpp
-d:\study\algorithm\algorithm\recursivealgorithm.h(36): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
-d:\study\algorithm\algorithm\stringtointeger.h(32): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\algorithm\algorithm\stringtointeger.h(50): warning C4244: 'return': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\algorithm\algorithm\stringtointeger.h(59): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\algorithm\algorithm\implementstrstr.h(17): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\algorithm\algorithm\implementstrstr.h(18): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Algorithm.vcxproj -> D:\Study\Algorithm\x64\Debug\Algorithm.exe
+D:\Programming\Algorithm\Algorithm\RecursiveAlgorithm.h(36,7): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+D:\Programming\Algorithm\Algorithm\StringToInteger.h(32,1): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\StringToInteger.h(50,15): warning C4244: 'return': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\StringToInteger.h(59,1): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\ImplementStrStr.h(17,1): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\ImplementStrStr.h(18,1): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\main.cpp(167,23): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\main.cpp(196,24): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\main.cpp(203,25): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\main.cpp(207,23): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\main.cpp(224,55): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\main.cpp(233,40): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  The contents of <format> are available only with C++20 or later.
+D:\Programming\Algorithm\Algorithm\main.cpp(403,39): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Programming\Algorithm\Algorithm\main.cpp(404,40): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Algorithm.vcxproj -> D:\Programming\Algorithm\x64\Debug\Algorithm.exe
