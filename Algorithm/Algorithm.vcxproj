@@ -178,6 +178,7 @@
     <ClInclude Include="BOJAlgorithm\StringToInteger.h" />
     <ClInclude Include="BOJAlgorithm\wcReverseWords.h" />
     <ClInclude Include="LeetCode\BinaryTree\BinaryTreePreorderTraversal.h" />
+    <ClInclude Include="LeetCode\BinaryTree\SymmetricTree.h" />
     <ClInclude Include="LeetCode\RemoveDuplicatesFromSortedArray.h" />
     <ClInclude Include="sort\Heap.h" />
     <ClInclude Include="sort\Sort.h" />
