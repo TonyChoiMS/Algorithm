@@ -1,19 +1,19 @@
-#include <iostream>
-#include "Algorithm.h"
-#include "DijkstraAlgorithm.h"
-#include "Palindrome.h"
-#include "RecursiveAlgorithm.h"
-#include "PrevTest.h"
-#include "StringToInteger.h"
-#include "ImplementStrStr.h"
-#include "ParseJson.h"
-#include "MultiThreadTest.h"
-#include "SortAlgorithm.h"
-#include "AplindromeLinkedList.h"
+ï»¿#include <iostream>
+#include "BOJAlgorithm/Algorithm.h"
+#include "BOJAlgorithm/DijkstraAlgorithm.h"
+#include "BOJAlgorithm/Palindrome.h"
+#include "BOJAlgorithm/RecursiveAlgorithm.h"
+#include "BOJAlgorithm/PrevTest.h"
+#include "BOJAlgorithm/StringToInteger.h"
+#include "BOJAlgorithm/ImplementStrStr.h"
+#include "BOJAlgorithm/ParseJson.h"
+#include "BOJAlgorithm/MultiThreadTest.h"
+#include "BOJAlgorithm/SortAlgorithm.h"
+#include "BOJAlgorithm/AplindromeLinkedList.h"
 
 using namespace std;
 
-// Node ¿¬½À
+// Node ï¿½ï¿½ï¿½ï¿½
 //class Node
 //{
 //public:
@@ -51,7 +51,7 @@ using namespace std;
 //	}
 //};
 
-// °¡»óÇÔ¼ö »ó¼Ó °ü°è È®ÀÎ
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 class A {
 public:
 	virtual void f1() { cout << "A :: f1" << endl; }
@@ -126,7 +126,7 @@ vector<string> split(string input, char delimiter)
 //	return ret;
 //}
 
-// ½Å°í °á°ú ¹Þ±â
+// ï¿½Å°ï¿½ ï¿½ï¿½ï¿½ ï¿½Þ±ï¿½
 vector<int> Solution1(vector<string> id_list, vector<string> report, int k) 
 {
 	vector<int> answer(id_list.size(), 0);
@@ -161,7 +161,7 @@ vector<int> Solution1(vector<string> id_list, vector<string> report, int k)
 }
 
 
-// ¹®ÀÚ¿­ ¾ÐÃà
+// ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
 int solution2(string s)
 {
 	int answer = s.size();
@@ -201,32 +201,32 @@ int solution2(string s)
 
 int solution3(string s) {
 	int answer = s.length();
-	//°æ¿ìÀÇ ¼ö Å½»öÇÏ±â
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Å½ï¿½ï¿½ï¿½Ï±ï¿½
 	for (int i = 1; i <= s.length() / 2; i++) 
 	{
 		int len = s.length();
-		//¹®ÀÚ¿­À» ÀüÃ¼ µ¹¸é¼­ ¹Ýº¹
+		//ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½é¼­ ï¿½Ýºï¿½
 		for (int j = 0; j < s.length(); j++) 
 		{
-			//ºÎºÐ ºñ±³ÇÏ±â
+			//ï¿½Îºï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
 			for (int count = 0, z = i; j + z < s.length(); z += i) 
 			{
-				//µÚºÎºÐ°ú ÀÏÄ¡ÇÑ´Ù¸é count Áõ°¡
+				//ï¿½ÚºÎºÐ°ï¿½ ï¿½ï¿½Ä¡ï¿½Ñ´Ù¸ï¿½ count ï¿½ï¿½ï¿½ï¿½
 				if (s.substr(j, i) == s.substr(j + z, i))
 				{
 					count++;
 				}
 				else 
 				{
-					//µÚ¿¡ºÎºÐÀÌ ÀÏÄ¡ÇÏÁö¾Ê´Â´Ù¸é countÈ®ÀÎÈÄ Áßº¹µÇ´Â ¹®ÀÚ¿­¸¸Å­ ±æÀÌÁÙÀÓ
-					//Ãß°¡µÇ´Â ¼ýÀÚ¸¸Å­ ±æÀÌÁõ°¡
+					//ï¿½Ú¿ï¿½ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ï¿½Ê´Â´Ù¸ï¿½ countÈ®ï¿½ï¿½ï¿½ï¿½ ï¿½ßºï¿½ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					//ï¿½ß°ï¿½ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					len -= i * count;
 					if (count)     len += to_string(count + 1).length();
 					j += z - 1;
 					break;
 				}
-				// ÇÑ¹øÀÌ¶óµµ ¾ÐÃàÀÌ µÈ»óÅÂ¿¡¼­ µÚ¿¡°¡ °è»êÀÌ ¾ÈµÈ´Ù¸é
-				//¾ÐÃàÈÄ Ãß°¡ÇÏ°í ³ª¸ÓÁö¸¦ µÚ¿¡ Ãß°¡
+				// ï¿½Ñ¹ï¿½ï¿½Ì¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È»ï¿½ï¿½Â¿ï¿½ï¿½ï¿½ ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµÈ´Ù¸ï¿½
+				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½ß°ï¿½
 				if (j + z + i >= s.length()) 
 				{
 					len -= i * count;
@@ -235,7 +235,7 @@ int solution3(string s) {
 				}
 			}
 		}
-		//¹®ÀÚ¿­ ±æÀÌ¸¦ ºñ±³ÇØ¼­ Àû¾îÁø´Ù¸é ÀûÀº°É·Î º¯°æ
+		//ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½É·ï¿½ ï¿½ï¿½ï¿½ï¿½
 		if (len < answer)    
 			answer = len;
 	}
@@ -245,14 +245,14 @@ int solution3(string s) {
 void print(string s, int answer) {
 	int t = solution3(s);
 	if (answer == t)
-		cout << "Á¤´ä" << endl;
+		cout << "ï¿½ï¿½ï¿½ï¿½" << endl;
 	else
-		cout << "Æ²¸²" << endl;
+		cout << "Æ²ï¿½ï¿½" << endl;
 }
 
 #include <format>
 
-// ¿ÀÇÂÃ¤ÆÃ¹æ
+// ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½Ã¹ï¿½
 vector<string> Solution4(vector<string> record)
 {
 	vector<string> answer;
@@ -283,11 +283,11 @@ vector<string> Solution4(vector<string> record)
 
 		if (state == "Enter")
 		{
-			answer.push_back(userList[uid] + "´ÔÀÌ µé¾î¿Ô½À´Ï´Ù.");
+			answer.push_back(userList[uid] + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô½ï¿½ï¿½Ï´ï¿½.");
 		}
 		else if (state == "Leave")
 		{
-			answer.push_back(userList[uid] + "´ÔÀÌ ³ª°¬½À´Ï´Ù.");
+			answer.push_back(userList[uid] + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 	
@@ -335,10 +335,10 @@ int BFS(int a, int b, int m, int n, vector<vector<int>> picture)
 	return Size;
 }
 
-// Ä«Ä«¿ÀÇÁ·»Áî ÄÃ·¯¸µºÏ
+// Ä«Ä«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½
 vector<int> solution(int m, int n, vector<vector<int>> picture) {
 
-	// ¹æ¹® ±â·Ï ÃÊ±âÈ­
+	// ï¿½æ¹® ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
 	for (int i = 0; i < m; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -350,7 +350,7 @@ vector<int> solution(int m, int n, vector<vector<int>> picture) {
 	int number_of_area = 0;
 	int max_size_of_one_area = 0;
 
-	vector<int> answer(2);			// 1Àº ¿µ¿ªÀÇ °³¼ö, 2´Â °¡Àå Å« ¿µ¿ªÀÇ Ä­ ¼ö
+	vector<int> answer(2);			// 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä­ ï¿½ï¿½
 
 	for (int i = 0; i < m; i++)
 	{
@@ -375,7 +375,7 @@ vector<int> solution(int m, int n, vector<vector<int>> picture) {
 	return answer;
 }
 
-// ´ÜÃ¼»çÁø Âï±â
+// ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 bool checkCondition(char opr, int num, int diff)
 {
 	if (opr == '=')
@@ -420,7 +420,7 @@ int solution5(int n, vector<string> data)
 	return answer;
 }
 
-// ±â´É°³¹ß
+// ï¿½ï¿½É°ï¿½ï¿½ï¿½
 vector<int> solution(vector<int> progresses, vector<int> speeds) {
 	vector<int> answer;
 
@@ -457,7 +457,7 @@ answer.push_back(1);
 	return answer;
 }
 
-// ¸ÖÂÄÇÑ »ç°¢Çü
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ç°¢ï¿½ï¿½
 int gcd(int a, int b) {
 	if (a == 0) return b;
 	return gcd(b % a, a);
@@ -471,8 +471,8 @@ long long solution(int w, int h)
 	return answer;
 }
 
-// 124 ³ª¶ó
-// 3Áø¹ý ¹®Á¦.
+// 124 ï¿½ï¿½ï¿½ï¿½
+// 3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 string solution(int n)
 {
 	string answer = "";
@@ -493,7 +493,7 @@ string solution(int n)
 	return answer;
 }
 
-// ´õ ¸Ê°Ô (¿ì¼±¼øÀ§ Å¥)
+// ï¿½ï¿½ ï¿½Ê°ï¿½ (ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ Å¥)
 int solution(vector<int> scoville, int K)
 {
 	int answer = 0;
@@ -516,7 +516,7 @@ int solution(vector<int> scoville, int K)
 	return answer;
 }
 
-// NÀ¸·Î Ç¥Çö
+// Nï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½
 int getNs(int N, int idx)
 {
 	int result = N;
@@ -570,7 +570,7 @@ int solution5(int N, int number)
 	return -1;
 }
 
-// ÀÔ±¹½É»ç
+// ï¿½Ô±ï¿½ï¿½É»ï¿½
 long long solution(int n, vector<int> times)
 {
 	long long answer = 0;
@@ -612,7 +612,7 @@ long long solution(int n, vector<int> times)
 
 string screen[64];
 
-// BOJ 1992 [Äõµå Æ®¸®]
+// BOJ 1992 [ï¿½ï¿½ï¿½ï¿½ Æ®ï¿½ï¿½]
 void RecursiveQuadTree(int size, int y, int x)
 {
 	char pixel = screen[y][x];
@@ -640,7 +640,7 @@ void RecursiveQuadTree(int size, int y, int x)
 int main() 
 {
 	////int nt;
-	////printf("ÇÏ³ëÀÌÀÇ µ¹ °¹¼ö : ");
+	////printf("ï¿½Ï³ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ");
 	////scanf("%d", &nt);
 	//Algorithm* algorithm = new Algorithm();
 	////algorithm->solveHanoi(nt, 1, 2, 3);
@@ -686,11 +686,11 @@ int main()
  //
  //   dijkstra.set(5, 6, 2);
 
- //   //ÃÖ´Ü°æ·Î °Ë»ö(0->6)
+ //   //ï¿½Ö´Ü°ï¿½ï¿½ ï¿½Ë»ï¿½(0->6)
  //   //dijkstra.findPath(0, 6);
 
 
-	//// °¡»óÇÔ¼ö »ó¼Ó°ü°è È®ÀÎ
+	//// ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 	//auto *pA = new A;
 	//pA->f1();
 	//pA->f2();
@@ -704,7 +704,7 @@ int main()
 	//delete pA;
 
 
-	//// ÆÓ¸°µå·Ò ¾Ë°í¸®Áò
+	//// ï¿½Ó¸ï¿½ï¿½ï¿½ï¿½ ï¿½Ë°ï¿½ï¿½ï¿½
 	////int n = 12321;
 
 	//bool bPalindrom = false;
@@ -714,18 +714,18 @@ int main()
 	//bPalindrom = palindrome.PalindromAlgorithmToInt(12321);
 
 	///*if (bPalindrom)
-	//	cout << n << ": È¸¹® ¼ýÀÚÀÔ´Ï´Ù." << endl;
+	//	cout << n << ": È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½." << endl;
 	//else
-	//	cout << n << ": È¸¹® ¼ýÀÚ°¡ ¾Æ´Õ´Ï´Ù." << endl;*/
+	//	cout << n << ": È¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´Õ´Ï´ï¿½." << endl;*/
 
 	//cout << bPalindrom << endl;
 	//string str = "asdfdsa";
 	//bPalindrom = palindrome.PalindromAlgorithmToString(str);
 
 	///*if (bPalindrom)
-	//	cout << "È¸¹®ÀÔ´Ï´Ù. " << str << endl;
+	//	cout << "È¸ï¿½ï¿½ï¿½Ô´Ï´ï¿½. " << str << endl;
 	//else
-	//	cout << "È¸¹®ÀÌ ¾Æ´Õ´Ï´Ù. " <<  str << endl;*/
+	//	cout << "È¸ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Õ´Ï´ï¿½. " <<  str << endl;*/
 
 	////cout << bPalindrom << endl;
 
@@ -767,32 +767,32 @@ int main()
 	//sss.strStr("hello", "ll");*/
 
 	//ParseJson pJson;
-	//int size;	// ¹®¼­ÀÇ Å©±â
-	//char *doc = pJson.ReadFile("example.json", &size);		// ÆÄÀÏ¿¡¼­ JSON ¹®¼­¸¦ ÀÐÀ½, ¹®¼­ Å©±â¸¦ ±¸ÇÔ
+	//int size;	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½
+	//char *doc = pJson.ReadFile("example.json", &size);		// ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ JSON ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ Å©ï¿½â¸¦ ï¿½ï¿½ï¿½ï¿½
 	//if (doc == nullptr)
 	//	return -1;
 
-	//JSON json;// = { 0, };	// JSON ±¸Á¶Ã¼ º¯¼ö ¼±¾ð ¹× ÃÊ±âÈ­
+	//JSON json;// = { 0, };	// JSON ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê±ï¿½È­
 
-	//pJson.Parse(doc, size, &json);	// JSON ¹®¼­ ÆÄ½Ì
+	//pJson.Parse(doc, size, &json);	// JSON ï¿½ï¿½ï¿½ï¿½ ï¿½Ä½ï¿½
 
 	//printf("Title: %s\n", json.tokens[1].string);
-	//printf("Year: %d\n", (int)json.tokens[3].number);    // ÅäÅ«¿¡ ÀúÀåµÈ ¼ýÀÚ Ãâ·Â(Year)
-	//printf("Runtime: %d\n", (int)json.tokens[5].number); // ÅäÅ«¿¡ ÀúÀåµÈ ¼ýÀÚ Ãâ·Â(Runtime)
-	//printf("Genre: %s\n", json.tokens[7].string);        // ÅäÅ«¿¡ ÀúÀåµÈ ¹®ÀÚ¿­ Ãâ·Â(Genre)
-	//printf("Director: %s\n", json.tokens[9].string);     // ÅäÅ«¿¡ ÀúÀåµÈ ¹®ÀÚ¿­ Ãâ·Â(Director)
+	//printf("Year: %d\n", (int)json.tokens[3].number);    // ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(Year)
+	//printf("Runtime: %d\n", (int)json.tokens[5].number); // ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(Runtime)
+	//printf("Genre: %s\n", json.tokens[7].string);        // ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½(Genre)
+	//printf("Director: %s\n", json.tokens[9].string);     // ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½(Director)
 
 	//printf("Actors:\n");
-	//int actors = pJson.GetArrayCount(&json, "Actors");                // Actors ¹è¿­ÀÇ °³¼ö¸¦ ±¸ÇÔ
-	//for (int i = 0; i < actors; i++)                            // ¹è¿­ÀÇ ¿ä¼Ò °³¼ö¸¸Å­ ¹Ýº¹
-	//	printf("  %s\n", pJson.GetArrayString(&json, "Actors", i));   // ÀÎµ¦½º¸¦ ÁöÁ¤ÇÏ¿© ¹®ÀÚ¿­À» °¡Á®¿È
+	//int actors = pJson.GetArrayCount(&json, "Actors");                // Actors ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	//for (int i = 0; i < actors; i++)                            // ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å­ ï¿½Ýºï¿½
+	//	printf("  %s\n", pJson.GetArrayString(&json, "Actors", i));   // ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	//printf("imdbRating: %f\n", json.tokens[17].number);  // ÅäÅ«¿¡ ÀúÀåµÈ ¼ýÀÚ Ãâ·Â(imdbRating)
+	//printf("imdbRating: %f\n", json.tokens[17].number);  // ï¿½ï¿½Å«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(imdbRating)
 
 
-	//pJson.FreeJson(&json);		// json¿¡ ÇÒ´çµÈ µ¿Àû ¸Þ¸ð¸® ÇØÁ¦
+	//pJson.FreeJson(&json);		// jsonï¿½ï¿½ ï¿½Ò´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	//free(doc);					// ¹®¼­ µ¿Àû ¸Þ¸ð¸® ÇØÁ¦
+	//free(doc);					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 	//MultiThreadTest mt;
 	//mt.BitTest();
@@ -807,7 +807,7 @@ int main()
 	//pl.Start();
 
 	/////////////////////////////////////////
-	// BOJ 1992 [Äõµå Æ®¸®]
+	// BOJ 1992 [ï¿½ï¿½ï¿½ï¿½ Æ®ï¿½ï¿½]
 	int N;
 	cin >> N;
 	for (int i = 0; i < N; i++)

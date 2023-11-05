@@ -151,51 +151,1089 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Algorithm.h" />
-    <ClInclude Include="AplindromeLinkedList.h" />
-    <ClInclude Include="BFS.h" />
-    <ClInclude Include="BinarySearch.h" />
-    <ClInclude Include="CalcNumCount.h" />
-    <ClInclude Include="CountAndSay.h" />
-    <ClInclude Include="DijkstraAlgorithm.h" />
-    <ClInclude Include="ExplorePoint.h" />
-    <ClInclude Include="Factorial.h" />
-    <ClInclude Include="InterView.h" />
-    <ClInclude Include="LinkedList.h" />
-    <ClInclude Include="LongestCommonPrefix.h" />
-    <ClInclude Include="MaximumDepthOfBinaryTree.h" />
-    <ClInclude Include="MergeTwoLists.h" />
-    <ClInclude Include="MultiThreadTest.h" />
-    <ClInclude Include="Palindrome.h" />
-    <ClInclude Include="ParseInt.h" />
-    <ClInclude Include="ParseJson.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="PrevTest.h" />
-    <ClInclude Include="RecursiveAlgorithm.h" />
-    <ClInclude Include="RemoveDuplicatesFromSortedArray.h" />
-    <ClInclude Include="ReverseBits.h" />
-    <ClInclude Include="SortAlgorithm.h" />
-    <ClInclude Include="StringToInteger.h" />
-    <ClInclude Include="ImplementStrStr.h" />
-    <ClInclude Include="wcReverseWords.h" />
+    <ClInclude Include="BOJAlgorithm\Algorithm.h" />
+    <ClInclude Include="BOJAlgorithm\AplindromeLinkedList.h" />
+    <ClInclude Include="BOJAlgorithm\BFS.h" />
+    <ClInclude Include="BOJAlgorithm\BinarySearch.h" />
+    <ClInclude Include="BOJAlgorithm\CalcNumCount.h" />
+    <ClInclude Include="BOJAlgorithm\CountAndSay.h" />
+    <ClInclude Include="BOJAlgorithm\DijkstraAlgorithm.h" />
+    <ClInclude Include="BOJAlgorithm\ExplorePoint.h" />
+    <ClInclude Include="BOJAlgorithm\Factorial.h" />
+    <ClInclude Include="BOJAlgorithm\ImplementStrStr.h" />
+    <ClInclude Include="BOJAlgorithm\InterView.h" />
+    <ClInclude Include="BOJAlgorithm\LinkedList.h" />
+    <ClInclude Include="BOJAlgorithm\LongestCommonPrefix.h" />
+    <ClInclude Include="BOJAlgorithm\MaximumDepthOfBinaryTree.h" />
+    <ClInclude Include="BOJAlgorithm\MergeTwoLists.h" />
+    <ClInclude Include="BOJAlgorithm\MultiThreadTest.h" />
+    <ClInclude Include="BOJAlgorithm\Palindrome.h" />
+    <ClInclude Include="BOJAlgorithm\ParseInt.h" />
+    <ClInclude Include="BOJAlgorithm\ParseJson.h" />
+    <ClInclude Include="BOJAlgorithm\pch.h" />
+    <ClInclude Include="BOJAlgorithm\PrevTest.h" />
+    <ClInclude Include="BOJAlgorithm\RecursiveAlgorithm.h" />
+    <ClInclude Include="BOJAlgorithm\ReverseBits.h" />
+    <ClInclude Include="BOJAlgorithm\SortAlgorithm.h" />
+    <ClInclude Include="BOJAlgorithm\StringToInteger.h" />
+    <ClInclude Include="BOJAlgorithm\wcReverseWords.h" />
+    <ClInclude Include="LeetCode\BinaryTree\BinaryTreePreorderTraversal.h" />
+    <ClInclude Include="LeetCode\RemoveDuplicatesFromSortedArray.h" />
+    <ClInclude Include="sort\Heap.h" />
+    <ClInclude Include="sort\Sort.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithm.cpp" />
-    <ClCompile Include="BFS.cpp" />
-    <ClCompile Include="DijkstraAlgorithm.cpp" />
-    <ClCompile Include="InterView.cpp" />
-    <ClCompile Include="LinkedList.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MultiThreadTest.cpp" />
-    <ClCompile Include="Palindrome.cpp" />
-    <ClCompile Include="ParseJson.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    <ClCompile Include="BOJAlgorithm\Algorithm.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
     </ClCompile>
-    <ClCompile Include="PrevTest.cpp" />
+    <ClCompile Include="BOJAlgorithm\BFS.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\DijkstraAlgorithm.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\InterView.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\LinkedList.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\MultiThreadTest.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\Palindrome.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\ParseJson.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\pch.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJAlgorithm\PrevTest.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="BOJ\1003\1003\another.c" />
+    <ClCompile Include="BOJ\1003\1003\main.c" />
+    <ClCompile Include="BOJ\1010\1010\main.cpp" />
+    <ClCompile Include="BOJ\1012\1012\main.cpp" />
+    <ClCompile Include="BOJ\10817\10817\main.c" />
+    <ClCompile Include="BOJ\10844\10844\main.cpp" />
+    <ClCompile Include="BOJ\10871\10871\main.c" />
+    <ClCompile Include="BOJ\10989\10989\main.cpp" />
+    <ClCompile Include="BOJ\11048\11048\main.cpp" />
+    <ClCompile Include="BOJ\11052\11052\main.c" />
+    <ClCompile Include="BOJ\11053\11053\main.cpp" />
+    <ClCompile Include="BOJ\11057\11057\main.cpp" />
+    <ClCompile Include="BOJ\1110\1110\main.c" />
+    <ClCompile Include="BOJ\11403\11403\main.cpp" />
+    <ClCompile Include="BOJ\1149\1149\main.cpp" />
+    <ClCompile Include="BOJ\11650\11650\main.cpp" />
+    <ClCompile Include="BOJ\11720\11720\main.c" />
+    <ClCompile Include="BOJ\11721\11721\main.c" />
+    <ClCompile Include="BOJ\11726\11726\main.c" />
+    <ClCompile Include="BOJ\11727\11727\main.cpp" />
+    <ClCompile Include="BOJ\1181\1181\main.cpp" />
+    <ClCompile Include="BOJ\1260\1260\main.cpp" />
+    <ClCompile Include="BOJ\1427\1427\main.cpp" />
+    <ClCompile Include="BOJ\1463\1463\main.cpp" />
+    <ClCompile Include="BOJ\1546\1546\main.c" />
+    <ClCompile Include="BOJ\1697\1697\main.cpp" />
+    <ClCompile Include="BOJ\1699\1699\main.cpp" />
+    <ClCompile Include="BOJ\1912\1912\main.cpp" />
+    <ClCompile Include="BOJ\1924\1924\main.c" />
+    <ClCompile Include="BOJ\1932\1932\main.cpp" />
+    <ClCompile Include="BOJ\1987\1987\main.cpp" />
+    <ClCompile Include="BOJ\2156\2156\main.cpp" />
+    <ClCompile Include="BOJ\2163\2163\main.cpp" />
+    <ClCompile Include="BOJ\2167\2167\main.cpp" />
+    <ClCompile Include="BOJ\2178\2178\main.cpp" />
+    <ClCompile Include="BOJ\2193\2193\main.c" />
+    <ClCompile Include="BOJ\2293\2293\main.cpp" />
+    <ClCompile Include="BOJ\2294\2294\main.cpp" />
+    <ClCompile Include="BOJ\2440\main.c" />
+    <ClCompile Include="BOJ\2441\2441\main.c" />
+    <ClCompile Include="BOJ\2579\2579\main.cpp" />
+    <ClCompile Include="BOJ\2583\2583\main.cpp" />
+    <ClCompile Include="BOJ\2667\2667\main.cpp" />
+    <ClCompile Include="BOJ\4344\4344\main.c" />
+    <ClCompile Include="BOJ\6359\6359\main.c" />
+    <ClCompile Include="BOJ\7576\7576\main.cpp" />
+    <ClCompile Include="BOJ\9095\9095\main.c" />
+    <ClCompile Include="BOJ\9251\9251\main.cpp" />
+    <ClCompile Include="BOJ\9461\9461\main.cpp" />
+    <ClCompile Include="BOJ\9465\9465\main.cpp" />
+    <ClCompile Include="BOJ\9498\9498\main.c" />
+    <ClCompile Include="main.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\Algorithm.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>x64\Debug\Algorithm.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="RecursiveAlgorithm.cpp" />
+    <ClCompile Include="sort\Heap.cpp" />
+    <ClCompile Include="sort\Sort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BOJ\1003\1003.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1003\1003.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1003\1003.xcodeproj\project.xcworkspace\xcuserdata\choeminsu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\1003\1003.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1003\1003\Readme.md" />
+    <Content Include="BOJ\1010\1010.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1010\1010.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1010\1010.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1012\1012.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1012\1012.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1012\1012.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\10817\10817.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\10817\10817.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\10817\10817.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\10817\10817.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\10817.xcscheme" />
+    <Content Include="BOJ\10817\10817.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\10844\10844.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\10844\10844.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\10844\10844.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\10871\10871.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\10871\10871.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\10871\10871.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\10871\10871.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\10871\10871.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\10871.xcscheme" />
+    <Content Include="BOJ\10871\10871.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\10989\10989.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\10989\10989.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\10989\10989.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11048\11048.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11048\11048.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11048\11048.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11052\11052.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11052\11052.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11052\11052.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11053\11053.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11053\11053.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11053\11053.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11057\11057.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11057\11057.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11057\11057.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1110\1110.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1110\1110.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1110\1110.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\1110\1110.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\1110\1110.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\1110.xcscheme" />
+    <Content Include="BOJ\1110\1110.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11403\11403.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11403\11403.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11403\11403.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1149\1149.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1149\1149.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1149\1149.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11650\11650.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11650\11650.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11650\11650.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11720\11720.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11720\11720.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11720\11720.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\11720\11720.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\11720.xcscheme" />
+    <Content Include="BOJ\11720\11720.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11721\11721.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11721\11721.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11721\11721.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\11721\11721.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\11721.xcscheme" />
+    <Content Include="BOJ\11721\11721.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11726\11726.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11726\11726.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11726\11726.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\11727\11727.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\11727\11727.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\11727\11727.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\11727\11727.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1181\1181.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1181\1181.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1181\1181.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\1181\1181.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1260\1260.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1260\1260.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1260\1260.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\1260\1260.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1427\1427.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1427\1427.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1427\1427.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1463\1463.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1463\1463.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1463\1463.xcodeproj\project.xcworkspace\xcuserdata\choeminsu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\1463\1463.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1546\1546.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1546\1546.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1546\1546.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\1546\1546.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\1546.xcscheme" />
+    <Content Include="BOJ\1546\1546.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1697\1697.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1697\1697.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1697\1697.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1699\1699.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1699\1699.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1699\1699.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1912\1912.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1912\1912.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1912\1912.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1924\1924.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1924\1924.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1924\1924.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\1924\1924.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\1924\1924.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\1924.xcscheme" />
+    <Content Include="BOJ\1924\1924.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1932\1932.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1932\1932.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1932\1932.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\1987\1987.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\1987\1987.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\1987\1987.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2156\2156.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2156\2156.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2156\2156.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2163\2163.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2163\2163.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2163\2163.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2167\2167.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2167\2167.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2167\2167.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2178\2178.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2178\2178.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2178\2178.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\2178\2178.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2193\2193.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2193\2193.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2193\2193.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2293\2293.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2293\2293.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2293\2293.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcdebugger\Breakpoints_v2.xcbkptlist" />
+    <Content Include="BOJ\2293\2293.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2294\2294.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2294\2294.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2294\2294.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2441\2441.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2441\2441.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2441\2441.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\2441\2441.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\2441.xcscheme" />
+    <Content Include="BOJ\2441\2441.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2579\2579.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2579\2579.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2579\2579.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\2579.xcscheme" />
+    <Content Include="BOJ\2579\2579.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2583\2583.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2583\2583.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2583\2583.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\2667\2667.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\2667\2667.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\2667\2667.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\4344\4344.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\4344\4344.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\4344\4344.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\4344\4344.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\4344.xcscheme" />
+    <Content Include="BOJ\4344\4344.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\6359\6359.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\6359\6359.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\6359\6359.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\6359\6359.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\6359.xcscheme" />
+    <Content Include="BOJ\6359\6359.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\7576\7576.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\7576\7576.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\7576\7576.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\9095\9095.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\9095\9095.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\9095\9095.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\9251\9251.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\9251\9251.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\9251\9251.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\9461\9461.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\9461\9461.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\9461\9461.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\9465\9465.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\9465\9465.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\9465\9465.xcodeproj\xcuserdata\choeminsu.xcuserdatad\xcschemes\xcschememanagement.plist" />
+    <Content Include="BOJ\9498\9498.xcodeproj\project.pbxproj" />
+    <Content Include="BOJ\9498\9498.xcodeproj\project.xcworkspace\contents.xcworkspacedata" />
+    <Content Include="BOJ\9498\9498.xcodeproj\project.xcworkspace\xcuserdata\ChoiMinSu.xcuserdatad\UserInterfaceState.xcuserstate" />
+    <Content Include="BOJ\9498\9498.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\9498.xcscheme" />
+    <Content Include="BOJ\9498\9498.xcodeproj\xcuserdata\ChoiMinSu.xcuserdatad\xcschemes\xcschememanagement.plist" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
