@@ -10,9 +10,10 @@
 >Use Language : C, C++ <br />
 
 ## Recent Solved question
-<b>LeetCode </b>
+<b>LeetCode</b>
 - Array
     - Remove Duplicates from Sorted Array
+<br />
 <br />
 -BinaryTree
     - BinaryTreePreorderTraversal
