@@ -11,8 +11,12 @@
 
 ## Recent Solved question
 <b>LeetCode </b>
-- Remove Duplicates from Sorted Array
-- BinaryTreePreorderTraversal
+- Array
+    - Remove Duplicates from Sorted Array
+<br />
+-BinaryTree
+    - BinaryTreePreorderTraversal
+    - LevelOrderTraversal
 <br />
 <br />
 <b>BOJ</b>
