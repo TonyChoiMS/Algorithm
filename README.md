@@ -13,8 +13,6 @@
 <b>LeetCode</b>
 - Array
     - Remove Duplicates from Sorted Array
-<br />
-<br />
 -BinaryTree
     - BinaryTreePreorderTraversal
     - LevelOrderTraversal
