@@ -637,8 +637,10 @@ void RecursiveQuadTree(int size, int y, int x)
 	cout << pixel;
 }
 
+
 int main() 
 {
+#pragma region aa
 	////int nt;
 	////printf("�ϳ����� �� ���� : ");
 	////scanf("%d", &nt);
@@ -808,16 +810,108 @@ int main()
 
 	/////////////////////////////////////////
 	// BOJ 1992 [���� Ʈ��]
-	int N;
-	cin >> N;
-	for (int i = 0; i < N; i++)
-	{
-		cin >> screen[i];
-	}
+	// int N;
+	// cin >> N;
+	// for (int i = 0; i < N; i++)
+	// {
+	// 	cin >> screen[i];
+	// }
 
-	RecursiveQuadTree(N, 0, 0);
+	//RecursiveQuadTree(N, 0, 0);
 
 
 	/////////////////////////////////////////
+#pragma endregion
+
+
+	
 	return 0;
 }
+
+
+
+
+
+
+///////////////////
+
+// 버프 적용하기 위해 호출하는 함수
+// void ApplyBuff(int buffId)
+// {
+// 	if (mBuffId == NONE)
+// 	{
+// 		// 현재 적용중인 버프가 없으면 즉시 버프 적용
+// 		mBuffId = buffId;
+// 		mBuffTime = DEFAULT_TIME;
+//
+// 		// 만약 queue에 동일한 버프가 존재하면 제거
+// 		DeleteSameBuff();
+// 	}
+// 	else if (mBuffId == buffId)
+// 	{
+// 		// 현재 적용중인 버프가 있는데, 같은 종류의 버프가 또 요청이 왔을 경우 시간만 초기화
+// 		mBuffTime = DEFAULT_TIME;
+// 	}
+// 	else
+// 	{
+// 		// 다른 종류의 버프인 경우, 큐에 enqueue
+// 		mBuffQueue.enqueue(buffId);
+// 	}
+// }
+//
+// // 버프 지속시간을 체크 및 버프 종료 하는 함수.
+// void ExpiredBuff()
+// {
+// 	if (mBuffTime > 0)
+// 	{
+// 		// 아직 버프 시간이 남아있는 경우
+// 		mBuffTime--;
+//
+// 		if (mBuffTime == 0)
+// 		{
+// 			// 버프 시간이 종료되면 다음에 적용할 버프가 있는지 확인
+// 			int nextBuffId = GetBuffQueueFront();
+// 			if (nextBuffId != NONE)
+// 			{
+// 				// 현재의 버프 정보 초기화
+// 				ResetBuffData();
+// 				// 다음에 적용할 버프가 있는 경우
+// 				ApplyBuff(nextBuffId);
+// 			}
+// 			else
+// 			{
+// 				// 더이상 적용할 버프가 없는 경우
+// 				ResetBuffData();
+// 			}
+// 		}
+// 	}
+// }
+//
+// // 버프 초기화
+// void ResetBuffData()
+// {
+// 	mBuffId = NONE;
+// 	mBuffTime = NONE;
+// }
+//
+// void DeleteSameBuff()
+// {
+// 	// 현재 적용되어있는 버프Id가 Queue에 있다면, 모두 제거
+// 	// 현재 버프큐에 있는 내용을 임시로 저장하기 위한 큐
+// 	std::queue tempQueue;
+// 	while (!mBuffQueue.empty())
+// 	{
+// 		// 현재 적용되어 있는 버프 id랑 다른 Id만 temp에 저장합니다.
+// 		int frontBuffId = mBuffQueue.front();
+// 		if (frontBuffId != mBuffId)
+// 		{
+// 			tempQueue.enqueue(frontBuffId);
+// 		}
+//
+// 		// 큐에서 item 빼옴
+// 		mBuffQueue.pop();
+// 	}
+//
+// 	// temp에 따로 저장해둔 id를 mBuffQueue로 전달
+// 	mBuffQueue = std::move(tempQueue);
+// }

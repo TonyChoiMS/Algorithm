@@ -178,6 +178,7 @@
     <ClInclude Include="BOJAlgorithm\StringToInteger.h" />
     <ClInclude Include="BOJAlgorithm\wcReverseWords.h" />
     <ClInclude Include="LeetCode\BinaryTree\BinaryTreePreorderTraversal.h" />
+    <ClInclude Include="LeetCode\BinaryTree\PathSum2.h" />
     <ClInclude Include="LeetCode\BinaryTree\SymmetricTree.h" />
     <ClInclude Include="LeetCode\RemoveDuplicatesFromSortedArray.h" />
     <ClInclude Include="sort\Heap.h" />
@@ -975,6 +976,7 @@
     <ClCompile Include="BOJ\9461\9461\main.cpp" />
     <ClCompile Include="BOJ\9465\9465\main.cpp" />
     <ClCompile Include="BOJ\9498\9498\main.c" />
+    <ClCompile Include="LeetCode\BinaryTree\PathSum2.cpp" />
     <ClCompile Include="main.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
